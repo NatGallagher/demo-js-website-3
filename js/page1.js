@@ -165,10 +165,14 @@ function lnkArrayAddRemoveLoopDemo1()
     console.log(items)
     console.log("");
     //update at array index
-
+    items[2] = 34.5
     //print array
-
+    console.log(items);
+    console.log("");
     //array loop
-
+    for(ndx=0; ndx < items.length; ndx++) {
+        console.log(`${ndx} - ${items[ndx]}`)
+    }
+    console.log("")
     //other loop do loop, while loop , foreach 
 }
