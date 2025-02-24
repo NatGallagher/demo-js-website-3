@@ -9,3 +9,9 @@ function lnkArrayDemo1() {
 
     console.log(msgText);
 }
+
+function lnkNonArrayDemo1() {
+    let msgText = "# page1: lnkNonArrayDemo1"
+
+    console.log(msgText);
+}
