@@ -3,3 +3,9 @@ function page_load() {
 
     console.log(msgText);
 }
+
+function lnkArrayDemo1() {
+    const msgText = "# page1: lnkArrayDemo1"
+
+    console.log(msgText);
+}
