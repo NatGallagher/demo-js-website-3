@@ -58,3 +58,10 @@ function lnkArrayDemo1(){
     console.log(`round total: , ${total.toFixed(2)}`)
 
 }
+
+function lnkArrayLoopDemo1(){
+
+    let msgText = "#page1 : lnkArrayLoopDemo1"
+
+    console.log(msgText.toUpperCase())
+}
