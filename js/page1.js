@@ -107,18 +107,30 @@ function lnkArrayAddRemoveLoopDemo1()
 {
     let msgText = "# page1 : lnkArrayAddRemoveLoopDemo1"
     console.log(msgText.toUpperCase())
-
     const items = [5,10,15.1,20,25]
     const item_names = ["iteama","iteamb","iteamc","iteamd","iteame",]
     const item_names_and_values = [5,"iteama",15,"iteamb",15.1,"iteamc","iteamd","iteame",]
-
+    //print arrays 
+    console.log("---- arrays ---------")
+    console.log(items)
+    
+    console.log("-------------")
+    console.log(item_names)
+    
+    console.log("-------------")
+    console.log(item_names_and_values)
+    console.log("-------------")
+    console.log("")
+    //array length
+    console.log("---array--length----")
+    console.log(items.length);
+    console.log(item_names.length)
+    console.log(item_names_and_values.length)
+    console.log("")
+    console.log("--add item---")
     //add item to array 
-
     //array loop 
-
     //remove item from array 
-
     //array loop
-
     //other loop do loop, while loop , foreach 
 }
