@@ -93,7 +93,7 @@ function lnkArrayLoopDemo1(){
         
         //total = total + current item[index]
         //or any valid javascript code 
-        total = total + items[i]
+        total += items[i];
     }
 
     console.log(`total: , ${total}`)
