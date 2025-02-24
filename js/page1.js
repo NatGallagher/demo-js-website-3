@@ -155,6 +155,10 @@ function lnkArrayAddRemoveLoopDemo1()
 
     //print array
 
+    //update at array index
+
+    //print array
+
     //array loop
 
     //other loop do loop, while loop , foreach 
