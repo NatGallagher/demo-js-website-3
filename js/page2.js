@@ -6,5 +6,7 @@ function page_load(){
 }
 
 function lnkJsonDemo1() {
-    
+    const msgText = "# page2: lnkJsonDemo1"
+
+    console.log(msgText.toUpperCase());
 }
