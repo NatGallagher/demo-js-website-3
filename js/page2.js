@@ -5,3 +5,6 @@ function page_load(){
     console.log(msgText.toUpperCase())
 }
 
+function lnkJsonDemo1() {
+    
+}
