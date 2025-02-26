@@ -5,4 +5,7 @@ function page_load(){
     console.log(msgText.toUpperCase())
 }
 
-
+function lnkJsonApiDemo1() {
+    let msgText = "page3: lnkJsonApiDemo1";
+    console.log(msgText.toUpperCase());
+}
