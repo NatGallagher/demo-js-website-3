@@ -97,6 +97,7 @@ function lnkFetchJsonApiDemo1()
     .then(response => {
       if (!response.ok) {
         //throw/raise - generate or a error and descrption 
+        //if you throttle the network you will throw this error
         throw new Error('Network response was not ok');
       }
       //-- convert data from text to json 
