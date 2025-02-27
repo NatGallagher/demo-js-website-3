@@ -1,6 +1,6 @@
 function page_load(){
 
-    const msgText = "# page4: page load"
+    const msgText = "# page5: page load"
 
     console.log(msgText.toUpperCase())
 }
@@ -9,11 +9,12 @@ function page_load(){
 function giphyApiDemo1()
 {
     
-    let msgText = "# page4: giphyApiDemo1"
+    let msgText = "# page5: giphyApiSearch1"
 
     console.log(msgText.toUpperCase())
 
     const divdisplayinfo = document.getElementById("divdisplayinfo");
+    const userInput = document.getElementById("user-input");
 
     if (divdisplayinfo == null | divdisplayinfo == undefined){       
         msgText = "## Page3 - divdisplayinfo not found"
@@ -25,7 +26,7 @@ function giphyApiDemo1()
 
     //giphy url and api key  
     
-    const _search_text = "transformers" //input text fields
+    const _search_text = userInput.value;
     const _giphy_ApiKey = "jOxDlf3Mt8SbKWzrI7MJEUrWmhYljT5C"
     const _giphy_result_data_file = "./data/giphy2.json";
     const _giphyApi_Url = `https://api.giphy.com/v1/gifs/search?api_key=${_giphy_ApiKey}&q=${_search_text}&limit=25&rating=g`; 
@@ -90,4 +91,13 @@ function giphyApiDemo1()
 
     //convert json string to json object 
 
+}
+
+function txtClear() {
+  console.log("clear")
+  const divdisplayinfo = document.getElementById("divdisplayinfo");
+  const userInput = document.getElementById("user-input");
+  const clearedDisplay = "";
+  divdisplayinfo.innerText = clearedDisplay;
+  userInput.value = clearedDisplay;
 }
