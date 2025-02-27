@@ -22,6 +22,11 @@ function giphyApiDemo1()
         return false;
     }
 
+    if (userInput.value == "") {
+      divdisplayinfo.innerText = "Please enter a image to search";
+      return false;
+    }
+
     divdisplayinfo.innerText = msgText;
 
     //giphy url and api key  
