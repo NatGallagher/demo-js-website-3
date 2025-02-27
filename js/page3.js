@@ -120,6 +120,7 @@ function lnkFetchJsonApiDemo1()
         divdisplayinfo.innerText = _name_email
         
     })
+    //this is optional but recommended
     .catch(error => {
       console.error('## There was a problem with the fetch operation:', error);
       divdisplayinfo.innerText = error;
