@@ -66,9 +66,28 @@ function giphyApiDemo1()
         console.log("")
 
         //retrieve giphy data 
-        const giphapi_image = `<img width='200' height='150' src='${data.data[0].images.original.url}'>`
+        //const giphapi_image = `<img width='200' height='150' src='${data.data[0].images.original.url}'>`
 
-        divdisplayinfo.innerHTML = giphapi_image
+        //display multiple imgaes
+        //build dynamic html in string or using DOM to dynamically append html elements
+
+        let _html = "<div>"
+        for(let i = 0; i < data.data.length; i++) {
+          //unit test: display 3 images
+          if(i>3) {
+            //exit loop
+            break;
+          }
+
+          _image = data.data[i].images.original.url
+          _html += `<img width="100" height="100" src='${_image}'>`
+          //display 3 images per row
+          _html += ""
+        }
+        
+        _html += "</div>"
+
+        divdisplayinfo.innerHTML = _html;
         
     })
     .catch(error => {
